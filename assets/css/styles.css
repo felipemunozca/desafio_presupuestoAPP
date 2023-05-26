@@ -18,15 +18,18 @@ html {
     width: 90%;
     margin: 0 auto;
 }
+.main-section h2 {
+    margin: 20px 25px;
+}
 
 .form-section {
-    /* width: 50%; */
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: center;
     margin-bottom: 20px;
 }
 
+/*** Formulario Presupuesto.***/
 .form-budget {
     width: 40%;
     display: flex;
@@ -41,7 +44,7 @@ html {
 }
 .form-budget input {
     margin: 5px 0;
-    padding: 5px;
+    padding: 6px;
 }
 .form-budget button {
     width: auto;
@@ -50,21 +53,39 @@ html {
     background-color: var(--verde-claro);
     width: 100px;
     margin: 5px 0;
-    padding: 5px;
+    padding: 6px;
     border-radius: 3px;
     cursor: pointer;
 }
-
-.detail-budget {
-    display: flex;
-    width: 60%;
-    text-align: center;
-    border: 1px solid purple;
+.form-budget button:hover {
+    color: white;
+    background-color: var(--verde-oscuro);
+    transition: 0.5s;
 }
-.detail-budget div {
+
+/*** Div con los totales por categoría. ***/
+.detail-budget {
+    width: 55%;
+    text-align: center;
+    margin-left: 2%;
+    /* border: 1px solid purple; */
+}
+.detail-budget--title {
+    display: flex;
+}
+.detail-budget--title p {
     width: 33%;
 }
+.detail-budget--result {
+    display: flex;
+}
+.detail-budget--result p {
+    width: 33%;
+    font-weight: 700;
+    margin-top: 10px;
+}
 
+/*** Formulario gastos. ***/
 .form-spent {
     width: 40%;
     display: flex;
@@ -79,7 +100,7 @@ html {
 }
 .form-spent input {
     margin: 5px 0;
-    padding: 5px;
+    padding: 6px;
 }
 .form-spent button {
     color: var(--rojo-oscuro);
@@ -87,17 +108,59 @@ html {
     background-color: var(--rojo-claro);
     width: 120px;
     margin: 5px 0;
-    padding: 5px;
+    padding: 6px;
     border-radius: 3px;
     cursor: pointer;
 }
-
-.detail-spent {
-    display: flex;
-    width: 60%;
-    text-align: center;
-    border: 1px solid purple;
+.form-spent button:hover {
+    color: white;
+    background-color: var(--rojo-oscuro);;
+    transition: 0.5s;
 }
-.detail-spent div {
-    width: 33%;
+
+/*** Div con el detalle de los gastos. ***/
+.detail-spent {
+    width: 55%;
+    text-align: center;
+    margin-left: 2%;
+    /* border: 1px solid purple; */
+}
+.detail-spent--line {
+    width: 95%;
+    margin: 8px auto;
+    border: 1px solid black;
+}
+.detail-spent--line2 {
+    width: 95%;
+    margin: 5px auto;
+    border: 1px solid lightgray;
+}
+.detail-spent--title {
+    display: flex;
+}
+.detail-spent--title > p:first-child {
+    width: 40%;
+    padding-left: 3%;
+}
+.detail-spent--title > p {
+    width: 30%;
+}
+.detail-spent--result {
+    display: flex;
+    flex-direction: column;
+}
+.detail-spent--row {
+    display: flex;
+}
+.detail-spent--row > p:first-child {
+    width: 40%;
+    text-align: left;
+    padding-left: 3%;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.detail-spent--row > p {
+    width: 30%;
+    font-weight: 700;
+    margin-top: 10px;
 }
