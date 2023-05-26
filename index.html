@@ -4,39 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+
+    <!--  -->
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Presupuesto APP</title>
 </head>
 <body>
-    <main>
+    <main class="main-section">
         <h2>Presupuesto APP</h2>
-        <section>
-            <form action="">
+        <section class="form-section">
+            <form class="form-budget">
                 <label for="">Ingresa Tu Presupuesto</label>
-                <input type="text">
-                <button>Calcular</button>
+                <input type="number" id="input">
+                <button type="submit" id="btnCalcular">Calcular</button>
             </form>
+            <div class="detail-budget">
+                <div>
+                    <p>Presupuesto</p>
+                    <p>$ 0</p>
+                </div>
+                <div>
+                    <p>Gastos</p>
+                    <p>$ 0</p>
+                </div>
+                <div>
+                    <p>Saldo</p>
+                    <p>$ 0</p>
+                </div>
+            </div>
         </section>
         <section>
-            <form action="">
+            
+        </section>
+        <section class="form-section">
+            
+            <form class="form-spent">
                 <label for="">Ingresa El Nombre Del Gasto</label>
                 <input type="text">
                 <label for="">Ingresa La Cantidad Del Gasto</label>
                 <input type="text">
                 <button>Añadir Gasto</button>
             </form>
-        </section>
-        <section>
-            <div>
-                <p>Presupuesto</p>
-                <p>$ 0</p>
-            </div>
-            <div>
-                <p>Gastos</p>
-                <p>$ 0</p>
-            </div>
-            <div>
-                <p>Saldo</p>
-                <p>$ 0</p>
+            <div class="detail-spent">
+                <div>
+                    <p>Gasto</p>
+                    <p>Aceite</p>
+                </div>
+                <div>
+                    <p>Valor</p>
+                    <p>0</p>
+                </div>
+                <div>
+                    <p>Acciones</p>
+                    <p>B</p>
+                </div>
             </div>
         </section>
     </main>
