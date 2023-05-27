@@ -18,9 +18,17 @@ btnCalcular.addEventListener('click', (e) => {
     const inputIngresoPresupuesto = document.querySelector('#inputIngresoPresupuesto').valueAsNumber;
 
     if (isNaN(inputIngresoPresupuesto)) {
-        alert('Debe agregar un presupuesto inicial antes.')
+        Swal.fire({
+            icon: 'error',
+            text: 'Debe agregar un numero al presupuesto inicial.',
+        });
+        // alert('Debe agregar un presupuesto inicial antes.')
     } else if (inputIngresoPresupuesto < 0 ) {
-        alert('El presupuesto no puede ser un numero negativo')
+        Swal.fire({
+            icon: 'error',
+            text: 'El presupuesto no puede ser un numero negativo.',
+        });
+        // alert('El presupuesto no puede ser un numero negativo')
     } else {
         arregloEntradas.push(inputIngresoPresupuesto);
 
@@ -36,11 +44,23 @@ btnGasto.addEventListener('click', (e) => {
     const inputGastoValor = document.querySelector('#inputGastoValor').valueAsNumber;
 
     if (inputGastoNombre == "") {
-        alert('Debe ingresar el nombre del gasto.')
+        Swal.fire({
+            icon: 'error',
+            text: 'Debe ingresar el nombre del gasto.',
+        });
+        // alert('Debe ingresar el nombre del gasto.')
     } else if (isNaN(inputGastoValor)) {
-        alert('Debe ingresar el valor del gasto.')
+        Swal.fire({
+            icon: 'error',
+            text: 'Debe ingresar el valor del gasto.',
+        });
+        // alert('Debe ingresar el valor del gasto.')
     } else if (inputGastoValor < 0 ) {
-        alert('El valor no puede ser un numero negativo.')
+        Swal.fire({
+            icon: 'error',
+            text: 'El valor no puede ser un numero negativo.',
+        });
+        // alert('El valor no puede ser un numero negativo.')
     } else {
         let objeto = {
             id: arregloSalidas.length + 1,
