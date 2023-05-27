@@ -1,6 +1,7 @@
 /*** Variables. ***/
 const btnCalcular = document.querySelector('#btnCalcular');
 const btnGasto = document.querySelector('#btnGasto');
+const btnReiniciar = document.querySelector('#btnReiniciar');
 const totalPresupuesto = document.querySelector('#totalPresupuesto');
 const totalGasto = document.querySelector('#totalGasto');
 const totalSaldo = document.querySelector('#totalSaldo');
@@ -53,6 +54,11 @@ btnGasto.addEventListener('click', (e) => {
         limpiarInputGasto()
     }
 });
+
+btnReiniciar.addEventListener('click', () => {
+    location.reload();
+});
+
 
 /*** Funciones ***/
 function agregarPresupuesto() {
